@@ -27,13 +27,7 @@ Aplicación de e-commerce enfocada en la gestión de pedidos con dos niveles de 
 
 ### Pasos de Instalación
 
-1. **Clonar el repositorio**
-```bash
-git clone https://github.com/tu-usuario/tienda-springboot.git
-cd tienda-springboot
-```
-
-2. **Configurar la base de datos**
+**Configurar la base de datos**
 
 Edita el archivo `src/main/resources/application.properties`:
 
@@ -48,27 +42,14 @@ spring.jpa.hibernate.ddl-auto=update
 server.port=8080
 ```
 
-3. **Crear la base de datos**
+ **Crear la base de datos**
 ```sql
-CREATE DATABASE tienda_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE tienda ;
 ```
 
-4. **Compilar el proyecto**
-```bash
-mvn clean install
-```
 
-5. **Ejecutar la aplicación**
-```bash
-mvn spring-boot:run
-```
 
-O bien, ejecutar el JAR generado:
-```bash
-java -jar target/tienda-0.0.1-SNAPSHOT.jar
-```
-
-6. **Acceder a la aplicación**
+ **Acceder a la aplicación**
 ```
 http://localhost:8080
 ```
