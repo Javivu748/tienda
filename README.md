@@ -57,7 +57,7 @@ http://localhost:8080
 ### Usuarios de Prueba
 
 **Cliente:**
-- Usuario: `cliente@tienda.com`
+- Usuario: `cliente`
 - Contraseña: `cliente123`
 
 ---
