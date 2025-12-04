@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nuevo Pedido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-light">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" th:href="@{/}">
+                <i class="bi bi-geo-alt-fill me-2"></i>
+                <strong>MapaTienda ERP</strong>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow border-0">
+                    <div class="card-header bg-primary text-white">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-cart-plus-fill me-2 fs-4"></i>
+                            <h2 class="h4 mb-0">Crear Nuevo Pedido</h2>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        
+                        <div class="alert alert-info py-2 mb-4">
+                            <h5 class="h6 mb-0">Cliente: <span th:text="${cliente.nombre} + ' ' + ${cliente.apellido}">Nombre Cliente</span></h5>
+                        </div>
+                        
+                        <form th:action="@{/pedidos/{id}/crear(id=${cliente.idCliente})}" th:object="${pedido}" method="post">
+                            
+                            <div class="mb-4">
+                                <label for="fechaPedido" class="form-label fw-semibold">Fecha</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light">
+                                        <i class="bi bi-calendar-date text-primary"></i>
+                                    </span>
+                                    <input type="date" th:field="*{fechaPedido}" id="fechaPedido" 
+                                           class="form-control" 
+                                           th:classappend="${#fields.hasErrors('fechaPedido') ? 'is-invalid' : ''}"
+                                           required>
+                                </div>
+                                <div th:if="${#fields.hasErrors('fechaPedido')}" th:errors="*{fechaPedido}" class="invalid-feedback d-block">Error de fecha</div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="estado" class="form-label fw-semibold">Estado</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light">
+                                        <i class="bi bi-info-circle text-primary"></i>
+                                    </span>
+                                    <select th:field="*{estado}" id="estado" class="form-select" 
+                                            th:classappend="${#fields.hasErrors('estado') ? 'is-invalid' : ''}"
+                                            required>
+                                        <option value="" disabled selected>Selecciona un estado</option>
+                                        <option value="anulado">Anulado</option>
+                                        <option value="enviado">Enviado</option>
+                                        <option value="procesando">Procesando</option>
+                                        <option value="entregado">Entregado</option>
+                                    </select>
+                                </div>
+                                <div th:if="${#fields.hasErrors('estado')}" th:errors="*{estado}" class="invalid-feedback d-block">Error de estado</div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="total" class="form-label fw-semibold">Total</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light">
+                                        <i class="bi bi-currency-dollar text-primary"></i>
+                                    </span>
+                                    <input type="number" th:field="*{total}" id="total" class="form-control" 
+                                           th:classappend="${#fields.hasErrors('total') ? 'is-invalid' : ''}"
+                                           step="0.01" min="0" placeholder="0.00" required>
+                                </div>
+                                <div class="form-text">Ingresa el total del pedido con dos decimales (mínimo 0)</div>
+                                <div th:if="${#fields.hasErrors('total')}" th:errors="*{total}" class="invalid-feedback d-block">Error en el total</div>
+                            </div>
+                            
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                <a th:href="@{/clientes}" class="btn btn-secondary me-md-2">
+                                    <i class="bi bi-x-lg me-1"></i> Cancelar
+                                </a>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-check-lg me-1"></i> Guardar Pedido
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

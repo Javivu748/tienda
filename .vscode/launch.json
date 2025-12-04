@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MapatiendaApplication<mapatienda>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.tienda.mapatienda.MapatiendaApplication",
+            "projectName": "mapatienda",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

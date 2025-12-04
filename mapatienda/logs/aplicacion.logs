@@ -1,0 +1,1034 @@
+2025-12-04T16:12:07.129+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 13208 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T16:12:07.160+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T16:12:08.599+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T16:12:08.742+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122 ms. Found 2 JPA repository interfaces.
+2025-12-04T16:12:09.689+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T16:12:09.716+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T16:12:09.718+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T16:12:09.805+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2565 ms
+2025-12-04T16:12:10.201+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T16:12:10.297+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T16:12:11.071+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T16:12:11.134+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T16:12:11.602+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5718e77c
+2025-12-04T16:12:11.606+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T16:12:11.685+01:00  WARN 13208 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T16:12:11.722+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T16:12:13.215+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T16:12:13.346+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T16:12:13.465+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T16:12:14.584+01:00  WARN 13208 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T16:12:14.715+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T16:12:14.991+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T16:12:15.618+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T16:12:15.737+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T16:12:15.753+01:00  INFO 13208 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.367 seconds (process running for 10.263)
+2025-12-04T16:12:18.693+01:00  INFO 13208 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T16:12:18.693+01:00  INFO 13208 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T16:12:18.702+01:00  INFO 13208 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2025-12-04T16:14:29.233+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 1324 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T16:14:29.243+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T16:14:30.671+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T16:14:30.763+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2025-12-04T16:14:31.712+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T16:14:31.732+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T16:14:31.733+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T16:14:31.821+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2500 ms
+2025-12-04T16:14:32.221+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T16:14:32.308+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T16:14:33.101+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T16:14:33.177+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T16:14:33.665+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66048c9e
+2025-12-04T16:14:33.671+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T16:14:33.765+01:00  WARN 1324 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T16:14:33.798+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T16:14:35.151+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T16:14:35.276+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T16:14:35.398+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T16:14:36.550+01:00  WARN 1324 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T16:14:36.676+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T16:14:36.953+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T16:14:37.575+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T16:14:37.756+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T16:14:37.769+01:00  INFO 1324 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.259 seconds (process running for 10.147)
+2025-12-04T16:14:40.543+01:00  INFO 1324 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T16:14:40.544+01:00  INFO 1324 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T16:14:40.546+01:00  INFO 1324 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T16:15:36.171+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 7076 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T16:15:36.184+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T16:15:37.610+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T16:15:37.699+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+2025-12-04T16:15:38.677+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T16:15:38.694+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T16:15:38.695+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T16:15:38.796+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2549 ms
+2025-12-04T16:15:39.214+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T16:15:39.292+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T16:15:40.051+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T16:15:40.121+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T16:15:40.609+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4da9da6c
+2025-12-04T16:15:40.612+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T16:15:40.701+01:00  WARN 7076 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T16:15:40.731+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T16:15:42.214+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T16:15:42.328+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T16:15:42.459+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T16:15:43.554+01:00  WARN 7076 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T16:15:43.695+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T16:15:43.987+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T16:15:44.644+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T16:15:44.776+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T16:15:44.789+01:00  INFO 7076 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.315 seconds (process running for 10.222)
+2025-12-04T16:15:47.439+01:00  INFO 7076 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T16:15:47.440+01:00  INFO 7076 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T16:15:47.442+01:00  INFO 7076 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T16:16:51.231+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 1068 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T16:16:51.243+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T16:16:52.795+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T16:16:52.892+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2025-12-04T16:16:53.919+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T16:16:53.940+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T16:16:53.941+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T16:16:54.037+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2702 ms
+2025-12-04T16:16:54.453+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T16:16:54.546+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T16:16:55.320+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T16:16:55.366+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T16:16:55.826+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4da9da6c
+2025-12-04T16:16:55.832+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T16:16:55.926+01:00  WARN 1068 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T16:16:55.960+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T16:16:57.300+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T16:16:57.418+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T16:16:57.545+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T16:16:58.661+01:00  WARN 1068 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T16:16:58.821+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T16:16:59.122+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T16:16:59.818+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T16:16:59.944+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T16:16:59.961+01:00  INFO 1068 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.512 seconds (process running for 10.471)
+2025-12-04T16:17:02.396+01:00  INFO 1068 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T16:17:02.397+01:00  INFO 1068 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T16:17:02.400+01:00  INFO 1068 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T16:17:56.962+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 6760 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T16:17:56.978+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T16:17:58.466+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T16:17:58.565+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+2025-12-04T16:17:59.545+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T16:17:59.565+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T16:17:59.566+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T16:17:59.672+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2598 ms
+2025-12-04T16:18:00.102+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T16:18:00.192+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T16:18:00.959+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T16:18:01.016+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T16:18:01.506+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75784062
+2025-12-04T16:18:01.510+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T16:18:01.592+01:00  WARN 6760 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T16:18:01.629+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T16:18:03.129+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T16:18:03.254+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T16:18:03.383+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T16:18:04.558+01:00  WARN 6760 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T16:18:04.699+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T16:18:04.990+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T16:18:05.634+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T16:18:05.767+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T16:18:05.781+01:00  INFO 6760 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.594 seconds (process running for 10.493)
+2025-12-04T16:18:08.170+01:00  INFO 6760 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T16:18:08.172+01:00  INFO 6760 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T16:18:08.174+01:00  INFO 6760 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T16:23:01.833+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 18228 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T16:23:01.843+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T16:23:03.298+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T16:23:03.389+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2025-12-04T16:23:04.392+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T16:23:04.412+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T16:23:04.413+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T16:23:04.499+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2562 ms
+2025-12-04T16:23:04.894+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T16:23:04.983+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T16:23:05.762+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T16:23:05.820+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T16:23:06.288+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4da9da6c
+2025-12-04T16:23:06.293+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T16:23:06.388+01:00  WARN 18228 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T16:23:06.424+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T16:23:07.813+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T16:23:07.935+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T16:23:08.066+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T16:23:09.241+01:00  WARN 18228 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T16:23:09.360+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T16:23:09.649+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T16:23:10.271+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T16:23:10.407+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T16:23:10.421+01:00  INFO 18228 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.329 seconds (process running for 10.233)
+2025-12-04T16:23:13.113+01:00  INFO 18228 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T16:23:13.114+01:00  INFO 18228 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T16:23:13.116+01:00  INFO 18228 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T16:23:30.536+01:00  INFO 18228 --- [mapatienda] [http-nio-8080-exec-5] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T16:24:07.292+01:00  INFO 18228 --- [mapatienda] [http-nio-8080-exec-2] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T16:25:23.757+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 19128 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T16:25:23.774+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T16:25:25.236+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T16:25:25.331+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+2025-12-04T16:25:26.343+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T16:25:26.362+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T16:25:26.363+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T16:25:26.453+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2586 ms
+2025-12-04T16:25:26.873+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T16:25:26.959+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T16:25:27.723+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T16:25:27.788+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T16:25:28.260+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6148827c
+2025-12-04T16:25:28.263+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T16:25:28.349+01:00  WARN 19128 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T16:25:28.380+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T16:25:29.851+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T16:25:29.972+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T16:25:30.112+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T16:25:31.264+01:00  WARN 19128 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T16:25:31.429+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T16:25:31.705+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T16:25:32.357+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T16:25:32.484+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T16:25:32.496+01:00  INFO 19128 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.484 seconds (process running for 10.395)
+2025-12-04T16:25:35.012+01:00  INFO 19128 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T16:25:35.015+01:00  INFO 19128 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T16:25:35.017+01:00  INFO 19128 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T16:25:58.550+01:00  INFO 19128 --- [mapatienda] [http-nio-8080-exec-5] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T16:27:09.306+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 20012 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T16:27:09.321+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T16:27:10.753+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T16:27:10.844+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2025-12-04T16:27:11.748+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T16:27:11.780+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T16:27:11.781+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T16:27:11.856+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2449 ms
+2025-12-04T16:27:12.258+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T16:27:12.345+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T16:27:13.145+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T16:27:13.215+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T16:27:13.694+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36cdcae0
+2025-12-04T16:27:13.698+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T16:27:13.774+01:00  WARN 20012 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T16:27:13.805+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T16:27:15.256+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T16:27:15.375+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T16:27:15.499+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T16:27:16.706+01:00  WARN 20012 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T16:27:16.835+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T16:27:17.153+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T16:27:17.909+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T16:27:18.098+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T16:27:18.113+01:00  INFO 20012 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.548 seconds (process running for 10.476)
+2025-12-04T16:27:20.549+01:00  INFO 20012 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T16:27:20.551+01:00  INFO 20012 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T16:27:20.553+01:00  INFO 20012 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T16:27:51.629+01:00  INFO 20012 --- [mapatienda] [http-nio-8080-exec-10] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T16:30:42.458+01:00  INFO 20012 --- [mapatienda] [http-nio-8080-exec-3] [                                                 ] c.t.m.controller.clienteController       : se ha cargado correctamente
+2025-12-04T16:30:46.417+01:00  INFO 20012 --- [mapatienda] [http-nio-8080-exec-4] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T16:31:21.943+01:00  INFO 20012 --- [mapatienda] [http-nio-8080-exec-7] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T16:33:30.927+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 15540 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T16:33:30.945+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T16:33:32.393+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T16:33:32.489+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+2025-12-04T16:33:33.480+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T16:33:33.501+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T16:33:33.503+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T16:33:33.592+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2569 ms
+2025-12-04T16:33:34.002+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T16:33:34.088+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T16:33:34.892+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T16:33:34.951+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T16:33:35.449+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64a8d575
+2025-12-04T16:33:35.455+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T16:33:35.531+01:00  WARN 15540 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T16:33:35.558+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T16:33:36.978+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T16:33:37.105+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T16:33:37.222+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T16:33:38.333+01:00  WARN 15540 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T16:33:38.486+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T16:33:38.760+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T16:33:39.408+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T16:33:39.531+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T16:33:39.544+01:00  INFO 15540 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.378 seconds (process running for 10.296)
+2025-12-04T16:33:42.176+01:00  INFO 15540 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T16:33:42.177+01:00  INFO 15540 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T16:33:42.179+01:00  INFO 15540 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T16:33:56.641+01:00  INFO 15540 --- [mapatienda] [http-nio-8080-exec-2] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T16:35:10.585+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 15120 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T16:35:10.601+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T16:35:12.076+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T16:35:12.161+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2025-12-04T16:35:13.123+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T16:35:13.142+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T16:35:13.143+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T16:35:13.228+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2536 ms
+2025-12-04T16:35:13.640+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T16:35:13.729+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T16:35:14.524+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T16:35:14.604+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T16:35:15.111+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5730b513
+2025-12-04T16:35:15.114+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T16:35:15.198+01:00  WARN 15120 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T16:35:15.234+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T16:35:16.711+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T16:35:16.829+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T16:35:16.968+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T16:35:18.160+01:00  WARN 15120 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T16:35:18.299+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T16:35:18.606+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T16:35:19.319+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T16:35:19.460+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T16:35:19.475+01:00  INFO 15120 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.68 seconds (process running for 10.652)
+2025-12-04T16:35:21.747+01:00  INFO 15120 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T16:35:21.747+01:00  INFO 15120 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T16:35:21.750+01:00  INFO 15120 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T16:35:36.552+01:00  INFO 15120 --- [mapatienda] [http-nio-8080-exec-5] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T16:37:25.243+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 5336 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T16:37:25.258+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T16:37:26.747+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T16:37:26.853+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+2025-12-04T16:37:27.860+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T16:37:27.882+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T16:37:27.882+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T16:37:27.964+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2627 ms
+2025-12-04T16:37:28.359+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T16:37:28.497+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T16:37:29.327+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T16:37:29.381+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T16:37:29.868+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71458178
+2025-12-04T16:37:29.871+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T16:37:29.955+01:00  WARN 5336 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T16:37:29.984+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T16:37:31.459+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T16:37:31.589+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T16:37:31.723+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T16:37:32.888+01:00  WARN 5336 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T16:37:33.060+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T16:37:33.374+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T16:37:34.059+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T16:37:34.183+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T16:37:34.197+01:00  INFO 5336 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.658 seconds (process running for 10.579)
+2025-12-04T16:37:36.516+01:00  INFO 5336 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T16:37:36.518+01:00  INFO 5336 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T16:37:36.522+01:00  INFO 5336 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-04T16:37:52.408+01:00  INFO 5336 --- [mapatienda] [http-nio-8080-exec-5] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T17:04:44.561+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 10300 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:04:44.571+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:04:46.112+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:04:46.220+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:04:47.307+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:04:47.331+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:04:47.332+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:04:47.423+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2747 ms
+2025-12-04T17:04:47.903+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:04:47.998+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:04:48.967+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:04:49.041+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:04:49.628+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f02b2d4
+2025-12-04T17:04:49.631+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:04:49.740+01:00  WARN 10300 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:04:49.787+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:04:51.339+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:04:51.462+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:04:51.587+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:04:52.749+01:00  WARN 10300 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:04:52.895+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:04:53.202+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:04:53.916+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:04:54.044+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:04:54.059+01:00  INFO 10300 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 10.281 seconds (process running for 11.162)
+2025-12-04T17:04:55.798+01:00  INFO 10300 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:04:55.799+01:00  INFO 10300 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:04:55.802+01:00  INFO 10300 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-04T17:06:06.331+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 15208 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:06:06.346+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:06:07.830+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:06:07.933+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:06:08.923+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:06:08.945+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:06:08.946+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:06:09.040+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2607 ms
+2025-12-04T17:06:09.467+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:06:09.566+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:06:10.402+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:06:10.465+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:06:11.001+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36cdcae0
+2025-12-04T17:06:11.004+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:06:11.104+01:00  WARN 15208 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:06:11.145+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:06:12.750+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:06:12.881+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:06:13.011+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:06:14.141+01:00  WARN 15208 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:06:14.308+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:06:14.633+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:06:15.328+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:06:15.477+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:06:15.491+01:00  INFO 15208 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.939 seconds (process running for 10.868)
+2025-12-04T17:06:17.540+01:00  INFO 15208 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:06:17.540+01:00  INFO 15208 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:06:17.542+01:00  INFO 15208 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-04T17:07:11.204+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 10596 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:07:11.217+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:07:12.687+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:07:12.806+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:07:13.814+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:07:13.835+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:07:13.836+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:07:13.921+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2633 ms
+2025-12-04T17:07:14.365+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:07:14.450+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:07:15.316+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:07:15.373+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:07:15.869+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5730b513
+2025-12-04T17:07:15.871+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:07:15.961+01:00  WARN 10596 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:07:15.995+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:07:17.501+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:07:17.634+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:07:17.761+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:07:18.912+01:00  WARN 10596 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:07:19.050+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:07:19.388+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:07:20.147+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:07:20.281+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:07:20.296+01:00  INFO 10596 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.87 seconds (process running for 10.812)
+2025-12-04T17:07:22.365+01:00  INFO 10596 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:07:22.366+01:00  INFO 10596 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:07:22.368+01:00  INFO 10596 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T17:07:56.603+01:00  INFO 10596 --- [mapatienda] [http-nio-8080-exec-2] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T17:07:58.363+01:00  INFO 10596 --- [mapatienda] [http-nio-8080-exec-3] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T17:08:03.895+01:00  INFO 10596 --- [mapatienda] [http-nio-8080-exec-5] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T17:08:14.716+01:00  INFO 10596 --- [mapatienda] [http-nio-8080-exec-1] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T17:08:35.060+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 17348 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:08:35.071+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:08:36.668+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:08:36.788+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:08:37.834+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:08:37.853+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:08:37.854+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:08:37.947+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2773 ms
+2025-12-04T17:08:38.370+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:08:38.470+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:08:39.382+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:08:39.484+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:08:40.031+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36cdcae0
+2025-12-04T17:08:40.037+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:08:40.121+01:00  WARN 17348 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:08:40.161+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:08:41.682+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:08:41.825+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:08:41.976+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:08:43.160+01:00  WARN 17348 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:08:43.314+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:08:43.664+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:08:44.420+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:08:44.546+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:08:44.561+01:00  INFO 17348 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 10.282 seconds (process running for 11.26)
+2025-12-04T17:08:46.223+01:00  INFO 17348 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:08:46.224+01:00  INFO 17348 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:08:46.226+01:00  INFO 17348 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T17:09:24.048+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 12784 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:09:24.066+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:09:25.682+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:09:25.796+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:09:26.803+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:09:26.824+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:09:26.824+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:09:26.913+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2748 ms
+2025-12-04T17:09:27.361+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:09:27.450+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:09:28.335+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:09:28.402+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:09:28.994+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36cdcae0
+2025-12-04T17:09:28.998+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:09:29.111+01:00  WARN 12784 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:09:29.153+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:09:30.611+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:09:30.729+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:09:30.863+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:09:32.032+01:00  WARN 12784 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:09:32.181+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:09:32.493+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:09:33.219+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:09:33.360+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:09:33.375+01:00  INFO 12784 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 10.116 seconds (process running for 11.043)
+2025-12-04T17:09:35.238+01:00  INFO 12784 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:09:35.239+01:00  INFO 12784 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:09:35.244+01:00  INFO 12784 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-04T17:11:11.582+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 17628 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:11:11.594+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:11:13.187+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:11:13.299+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:11:14.329+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:11:14.352+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:11:14.353+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:11:14.443+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2703 ms
+2025-12-04T17:11:14.873+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:11:14.957+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:11:15.813+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:11:15.886+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:11:16.379+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f02b2d4
+2025-12-04T17:11:16.383+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:11:16.465+01:00  WARN 17628 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:11:16.506+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:11:17.997+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:11:18.116+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:11:18.247+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:11:19.430+01:00  WARN 17628 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:11:19.587+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:11:19.895+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:11:20.637+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:11:20.766+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:11:20.777+01:00  INFO 17628 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.958 seconds (process running for 10.851)
+2025-12-04T17:11:22.782+01:00  INFO 17628 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:11:22.783+01:00  INFO 17628 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:11:22.785+01:00  INFO 17628 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T17:16:19.917+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 17056 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:16:19.929+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:16:21.460+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:16:21.556+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:16:22.590+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:16:22.614+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:16:22.614+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:16:22.693+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2680 ms
+2025-12-04T17:16:23.180+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:16:23.274+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:16:24.197+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:16:24.271+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:16:24.847+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74787609
+2025-12-04T17:16:24.851+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:16:24.975+01:00  WARN 17056 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:16:25.023+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:16:26.748+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:16:26.880+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:16:27.024+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:16:28.280+01:00  WARN 17056 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:16:28.424+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:16:28.797+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:16:29.576+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:16:29.704+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:16:29.718+01:00  INFO 17056 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 10.586 seconds (process running for 11.53)
+2025-12-04T17:16:31.197+01:00  INFO 17056 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:16:31.198+01:00  INFO 17056 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:16:31.201+01:00  INFO 17056 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-04T17:18:00.561+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 3044 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:18:00.577+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:18:02.097+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:18:02.210+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:18:03.220+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:18:03.243+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:18:03.243+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:18:03.358+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2670 ms
+2025-12-04T17:18:03.805+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:18:03.906+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:18:04.828+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:18:04.897+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:18:05.406+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36cdcae0
+2025-12-04T17:18:05.408+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:18:05.502+01:00  WARN 3044 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:18:05.553+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:18:07.116+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:18:07.246+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:18:07.418+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:18:08.645+01:00  WARN 3044 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:18:08.782+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:18:09.080+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:18:09.759+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:18:09.900+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:18:09.913+01:00  INFO 3044 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 10.117 seconds (process running for 11.091)
+2025-12-04T17:18:11.750+01:00  INFO 3044 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:18:11.752+01:00  INFO 3044 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:18:11.755+01:00  INFO 3044 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-04T17:19:16.197+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 9916 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:19:16.205+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:19:17.726+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:19:17.823+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:19:18.880+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:19:18.902+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:19:18.904+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:19:19.000+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2694 ms
+2025-12-04T17:19:19.453+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:19:19.537+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:19:20.395+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:19:20.446+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:19:20.917+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47374fa5
+2025-12-04T17:19:20.922+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:19:21.012+01:00  WARN 9916 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:19:21.046+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:19:22.519+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:19:22.654+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:19:22.792+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:19:24.027+01:00  WARN 9916 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:19:24.226+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:19:24.537+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:19:25.253+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:19:25.387+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:19:25.403+01:00  INFO 9916 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 10.01 seconds (process running for 10.922)
+2025-12-04T17:19:27.350+01:00  INFO 9916 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:19:27.350+01:00  INFO 9916 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:19:27.353+01:00  INFO 9916 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-04T17:21:04.556+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 5988 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:21:04.565+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:21:06.056+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:21:06.162+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:21:07.242+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:21:07.267+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:21:07.267+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:21:07.360+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2694 ms
+2025-12-04T17:21:07.785+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:21:07.875+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:21:08.717+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:21:08.775+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:21:09.240+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47374fa5
+2025-12-04T17:21:09.242+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:21:09.330+01:00  WARN 5988 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:21:09.362+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:21:10.850+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:21:10.974+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:21:11.094+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:21:12.305+01:00  WARN 5988 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:21:12.452+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:21:12.780+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:21:13.476+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:21:13.607+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:21:13.619+01:00  INFO 5988 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.862 seconds (process running for 10.84)
+2025-12-04T17:21:15.674+01:00  INFO 5988 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:21:15.675+01:00  INFO 5988 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:21:15.676+01:00  INFO 5988 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-04T17:22:00.256+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 16808 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:22:00.264+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:22:01.749+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:22:01.846+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:22:02.932+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:22:02.958+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:22:02.959+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:22:03.051+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2691 ms
+2025-12-04T17:22:03.482+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:22:03.559+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:22:04.409+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:22:04.479+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:22:04.988+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47374fa5
+2025-12-04T17:22:04.990+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:22:05.075+01:00  WARN 16808 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:22:05.115+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:22:06.658+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:22:06.770+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:22:06.905+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:22:08.085+01:00  WARN 16808 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:22:08.224+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:22:08.533+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:22:09.268+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:22:09.417+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:22:09.432+01:00  INFO 16808 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.949 seconds (process running for 10.878)
+2025-12-04T17:22:11.447+01:00  INFO 16808 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:22:11.447+01:00  INFO 16808 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:22:11.451+01:00  INFO 16808 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-12-04T17:22:23.227+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 3264 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:22:23.239+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:22:24.708+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:22:24.808+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:22:25.828+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:22:25.854+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:22:25.855+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:22:25.939+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2623 ms
+2025-12-04T17:22:26.400+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:22:26.501+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:22:27.436+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:22:27.509+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:22:28.059+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47374fa5
+2025-12-04T17:22:28.068+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:22:28.189+01:00  WARN 3264 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:22:28.225+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:22:29.880+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:22:30.004+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:22:30.130+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:22:31.373+01:00  WARN 3264 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:22:31.524+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:22:31.834+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:22:32.646+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:22:32.790+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:22:32.806+01:00  INFO 3264 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 10.38 seconds (process running for 11.336)
+2025-12-04T17:22:48.703+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 14884 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:22:48.731+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:22:50.189+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:22:50.298+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:22:51.284+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:22:51.308+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:22:51.308+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:22:51.403+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2579 ms
+2025-12-04T17:22:51.831+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:22:51.919+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:22:52.849+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:22:52.907+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:22:53.468+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5730b513
+2025-12-04T17:22:53.471+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:22:53.554+01:00  WARN 14884 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:22:53.580+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:22:55.133+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:22:55.274+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:22:55.410+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:22:56.594+01:00  WARN 14884 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:22:56.735+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:22:57.032+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:22:57.750+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:22:57.888+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:22:57.901+01:00  INFO 14884 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 10.022 seconds (process running for 10.971)
+2025-12-04T17:22:59.845+01:00  INFO 14884 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:22:59.845+01:00  INFO 14884 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:22:59.849+01:00  INFO 14884 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-04T17:25:56.569+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 2040 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:25:56.583+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:25:58.123+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:25:58.235+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:25:59.237+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:25:59.274+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:25:59.275+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:25:59.370+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2687 ms
+2025-12-04T17:25:59.802+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:25:59.895+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:26:00.775+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:26:00.838+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:26:01.329+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66048c9e
+2025-12-04T17:26:01.333+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:26:01.417+01:00  WARN 2040 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:26:01.444+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:26:02.884+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:26:03.009+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:26:03.139+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:26:04.291+01:00  WARN 2040 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:26:04.429+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:26:04.731+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:26:05.430+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:26:05.574+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:26:05.587+01:00  INFO 2040 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 9.796 seconds (process running for 10.782)
+2025-12-04T17:26:07.836+01:00  INFO 2040 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:26:07.837+01:00  INFO 2040 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:26:07.839+01:00  INFO 2040 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-04T17:28:57.074+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Starting MapatiendaApplication using Java 17.0.12 with PID 16944 (C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda\target\classes started by vivaz in C:\2DAW\ENTORNO SERVIDORES\Springboot\tienda\mapatienda)
+2025-12-04T17:28:57.088+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-04T17:28:58.574+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-04T17:28:58.685+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+2025-12-04T17:28:59.749+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-04T17:28:59.787+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-04T17:28:59.787+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-04T17:28:59.898+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2720 ms
+2025-12-04T17:29:00.363+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-04T17:29:00.448+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-04T17:29:01.381+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-04T17:29:01.465+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-04T17:29:02.069+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36cdcae0
+2025-12-04T17:29:02.079+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-04T17:29:02.243+01:00  WARN 16944 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-04T17:29:02.276+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/tienda]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.4
+	Default catalog/schema: tienda/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-04T17:29:03.829+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-04T17:29:03.948+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-04T17:29:04.081+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-04T17:29:05.274+01:00  WARN 16944 --- [mapatienda] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-04T17:29:05.411+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-12-04T17:29:05.718+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2025-12-04T17:29:06.444+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-04T17:29:06.584+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-04T17:29:06.597+01:00  INFO 16944 --- [mapatienda] [main] [                                                 ] c.t.mapatienda.MapatiendaApplication     : Started MapatiendaApplication in 10.295 seconds (process running for 11.257)
+2025-12-04T17:29:08.348+01:00  INFO 16944 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-04T17:29:08.349+01:00  INFO 16944 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-04T17:29:08.353+01:00  INFO 16944 --- [mapatienda] [RMI TCP Connection(2)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-04T17:39:21.680+01:00  INFO 16944 --- [mapatienda] [http-nio-8080-exec-4] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T17:41:04.947+01:00  INFO 16944 --- [mapatienda] [http-nio-8080-exec-2] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T17:41:14.896+01:00  INFO 16944 --- [mapatienda] [http-nio-8080-exec-4] [                                                 ] c.t.m.controller.clienteController       : se ha cargado correctamente
+2025-12-04T17:41:49.196+01:00  INFO 16944 --- [mapatienda] [http-nio-8080-exec-1] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T17:52:17.041+01:00  INFO 16944 --- [mapatienda] [http-nio-8080-exec-3] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T17:52:20.976+01:00  INFO 16944 --- [mapatienda] [http-nio-8080-exec-5] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T17:52:24.536+01:00  INFO 16944 --- [mapatienda] [http-nio-8080-exec-4] [                                                 ] c.t.m.controller.clienteController       : Lista de clientes cargada
+2025-12-04T17:53:00.224+01:00 ERROR 16944 --- [mapatienda] [http-nio-8080-exec-10] [                                                 ] c.t.m.controller.clienteController       : Error al registrarse porfavor intentelo mas tarde
+2025-12-04T17:53:35.982+01:00  INFO 16944 --- [mapatienda] [http-nio-8080-exec-2] [                                                 ] c.t.m.controller.clienteController       : El usuario se ha registrado correctamente
